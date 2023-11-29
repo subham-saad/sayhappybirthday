@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {BG} from '../assets/BG.jpg';
+import BG from '../assets/BG.jpg';
 import CeleBG from '../assets/CelebrationsBg1.png';
 import asset from '../assets/Asset.png'
 import Yellowtone from '../assets/Yellowtone.png'
