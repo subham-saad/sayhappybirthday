@@ -1,0 +1,67 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#terms {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#terms:checked {
+  background-color: #482683 ;
+}
+
+.nav {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  }
+
+  /* Hide the default arrow in modern browsers */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some padding to make room for the custom arrow */
+  padding-right: 4rem;
+}
+
+/* Style the custom arrow */
+select::after {
+  content: '\25BC'; /* Unicode character for a downward arrow */
+  font-size: 1rem;
+  color: #555; /* Adjust color as needed */
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the arrow does not interfere with clicks */
+}
+
+/* Track */
+ /* For WebKit browsers (Chrome, Safari) */
+ ::-webkit-scrollbar {
+  width: 3px; /* width of the scrollbar */
+  border-radius: 12px;
+  /* background-color: rgb(233, 196, 11); */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track (the area behind the thumb) */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+ /* color of the thumb (the draggable handle) */
+ background-color: rgb(233, 196, 11);
+  border-radius: 12px; /* roundness of the thumb */
+}
+
