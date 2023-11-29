@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const OtpPopUp = ({ isOpen, onClose, onSubmit }) => {
   const [otp, setOtp] = useState(['', '', '', '']);
@@ -14,10 +14,11 @@ const OtpPopUp = ({ isOpen, onClose, onSubmit }) => {
     if (enteredOtp === '1234') {
       onSubmit();
     } else {
-      console.log('Invalid OTP');
+      alert('Invalid OTP. Please enter the correct OTP.');
     }
   };
 
+  
   return (
     <div className={isOpen ? "fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center" : "hidden"}>
       <div className="bg-white p-6 w-60 rounded-md shadow-md max-w-md">
@@ -26,7 +27,7 @@ const OtpPopUp = ({ isOpen, onClose, onSubmit }) => {
           {otp.map((digit, index) => (
             <input
               key={index}
-              type="text"
+              type="number"
               placeholder=""
               maxLength="1"
               className="w-10 p-3 border border-gray-500 bg-[#482683] text-white font-semibold text-xs rounded-md mr-2"

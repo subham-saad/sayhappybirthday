@@ -54,7 +54,7 @@ function Registration() {
         <form className="w-full max-w-md min-[360px]:p-[18px] min-[380px]:p-[26px] min-[412px]:p-[35px] min-[430]:p-[40px] absolute min-[360px]:top-[285px] min-[390px]:top-[300px] min-[412px]:top-[320px] mx-auto" onSubmit={handleSubmit}>
       <h2 className="text-white text-lg font-bold mb-2 text-center">Register to Create</h2>
   <input
-    type="tel"
+    type="number"
     id="phone"
     name="phone"
     placeholder="Phone Number"
